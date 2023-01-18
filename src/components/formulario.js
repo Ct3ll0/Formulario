@@ -12,6 +12,7 @@ const Formulario = ({setContacts=()=>{}}) => {
   };
   const [initialValues, _] = useState(valoresIniciales);
 
+  
   return (
     <div>
       <h1 className="Titulo">Add Contact</h1>
