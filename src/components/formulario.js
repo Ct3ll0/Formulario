@@ -19,7 +19,7 @@ const Formulario = ({setContacts=()=>{}}) => {
 
       <Formik
         onSubmit={(datos, { resetForm }) => {
-          setContacts(contact=>[...contact, datos])
+          setContacts(e=>{console.log("Estado anterior: ",e); return [...e, datos]})
           resetForm();
         }}
         initialValues={initialValues}
